@@ -4,24 +4,39 @@
     box-sizing: border-box;
 }
 
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
+.section {
+    min-height: 100vh;
 }
 
 #section-1 {
-    background-color: thistle;
+    /* background-color: thistle; */
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.home-left {
+    /* background-color: rosybrown; */
+    /* text-align: center; */
+    padding: 8rem;
+}
+
+.home-heading {
+    font-size: 5rem;
+}
+
+.home-right {
+    margin: auto;
+    text-align: center;
+    /* background-color: rosybrown; */
+}
+
+.home-gif img {
+    /* width: 400px; */
 }
 
 .big-un-blue {
     font-size: 6rem;
     font-weight: 900;
     color: rgb(91, 146, 229);
-}
-
-.sdg-logo-img img {
-    width: 600px;
 }
