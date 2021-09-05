@@ -1,42 +1,133 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
     box-sizing: border-box;
 }
 
+
+/* General Libs */
 .section {
     min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#section-1 {
+.un-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+.un-blue {
+    color: rgb(0, 158, 219);
+}
+
+.theme-color {
+    color: rgb(91, 146, 229);
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* Home Section */
+#home {
     /* background-color: thistle; */
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.home-left {
+.main-box {
+    margin: auto;
     /* background-color: rosybrown; */
-    /* text-align: center; */
-    padding: 8rem;
+    text-align: center;
 }
 
 .home-heading {
+    /* background-color: salmon; */
+    text-align: left;
     font-size: 5rem;
-}
-
-.home-right {
-    margin: auto;
-    text-align: center;
-    /* background-color: rosybrown; */
-}
-
-.home-gif img {
-    /* width: 400px; */
-}
-
-.big-un-blue {
-    font-size: 6rem;
     font-weight: 900;
-    color: rgb(91, 146, 229);
+}
+
+.home-motto {
+    margin: 2rem 0 0 2rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* Mission Section */
+#mission {}
+
+.mission-img img {
+    width: 40%;
+}
+
+
+
+/* Button Effects */
+.two-way-underline {
+    padding-bottom: 8px;
+    background:
+        linear-gradient(#ff0000 0 0) 0 100%,
+        linear-gradient(#0000ff 0 0) 100% 100%;
+    background-size: 0% 4px;
+    background-repeat: no-repeat;
+    background-blend-mode: difference;
+    transition: .5s, background-position 0s .5s;
+}
+
+.two-way-underline:hover {
+    background-size: 100% 4px;
+    background-position: 100% 100%, 0 100%;
+}
+
+.color-splash {
+    padding: 8px;
+    background:
+        radial-gradient(farthest-side at top, #00ff00 97%, #0000) top,
+        radial-gradient(farthest-side at bottom left, #ff0000 97%, #0000) bottom left,
+        radial-gradient(farthest-side at bottom right, #0000ff 97%, #0000) bottom right;
+    background-size: 0% 0%;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+}
+
+.color-splash:hover {
+    background-size: 280px 140px, 280px 280px;
+    transition: .5s;
+}
+
+.border-hv {
+    padding: 8px;
+    background:
+        linear-gradient(90deg, currentColor 50%, #0000 0) 100% 0,
+        linear-gradient(currentColor 0 0) 100% 0,
+        linear-gradient(-90deg, currentColor 50%, #0000 0) 0% 100%,
+        linear-gradient(currentColor 0 0) 0 100%;
+    background-size: 200% 3px, 3px 0%;
+    background-repeat: no-repeat;
+    transition: .3s, background-position .3s .3s;
+}
+
+.border-hv:hover {
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-size: 200% 3px, 3px 100%;
+    transition: .3s, background-size .3s .3s;
+}
+
+.glitch-text {
+    text-shadow:
+        0 0 0 rgb(255, 0, 0),
+        0 0 0 rgb(0, 255, 0),
+        0 0 0 rgb(0, 0, 255);
+}
+
+.glitch-text:hover {
+    text-shadow:
+        0.3px -0.1px 0.1px rgb(255, 0, 0),
+        0.2px 0.1px 0 rgb(0, 255, 0),
+        -0.1px 0.2px 0 rgb(0, 0, 255);
+    transition: 0.2s cubic-bezier(0.5, 200, 0.5, -200);
 }
