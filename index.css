@@ -52,6 +52,7 @@
 }
 
 .home-motto {
+    width: fit-content;
     margin: 2rem 0 0 2rem;
     text-align: left;
     text-transform: uppercase;
@@ -61,12 +62,18 @@
 #mission {}
 
 .mission-img img {
-    width: 40%;
+    width: 500px;
+}
+
+.mission-content {
+    padding: 12% 2%;
+    max-width: 600px;
+    font-size: 1.3rem;
 }
 
 
 
-/* Button Effects */
+/* Special Effects */
 .two-way-underline {
     padding-bottom: 8px;
     background:
