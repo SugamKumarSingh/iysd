@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#header {
+    padding: 2% 5%;
+    /* background-color: teal; */
+    text-align: center;
+}
+
+#header img {
+    max-width: 80vw;
+}
+
+.sdg-container {
+    width: 80vw;
+    padding: 3%;
+    margin: 10px;
+    background-color: tomato;
+}
+
+.sdg-gif {
+    width: fit-content;
+    background-color: turquoise;
+}
+
+.sdg-gif img {
+    width: 20vw;
+}
