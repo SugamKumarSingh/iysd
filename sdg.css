@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
 #header {
     padding: 2% 5%;
     /* background-color: teal; */
@@ -19,14 +27,23 @@
     width: 80vw;
     padding: 3%;
     margin: 10px;
-    background-color: tomato;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    text-align: center;
+    /* background-color: tomato; */
 }
 
 .sdg-gif {
     width: fit-content;
-    background-color: turquoise;
+    /* background-color: turquoise; */
 }
 
 .sdg-gif img {
     width: 20vw;
+}
+
+.sdg-text {
+    /* background-color: yellow; */
+    min-height: 20vw;
 }
