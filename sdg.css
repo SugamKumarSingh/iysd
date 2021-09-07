@@ -61,54 +61,84 @@
     border-radius: 20px;
     box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.4);
     width: 80vw;
-    padding: 3%;
     display: flex;
+    overflow: hidden;
+    padding: 1.5rem;
     /* flex-wrap: wrap; */
     /* text-align: center; */
     transition: all 0.6s ease;
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
 .lc {
     margin: 50px auto 20px 50px;
+    flex-direction: row;
 }
 
 .rc {
     margin: 50px 50px 20px auto;
+    flex-direction: row-reverse;
 }
 
 .sdg-container:hover {
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.lc:hover {
+    margin: 50px auto 20px 50px;
+    flex-direction: row;
+}
+
+.rc:hover {
+    margin: 50px 50px 20px auto;
+    flex-direction: row-reverse;
 }
 
 .sdg-gif {
-    /* width: fit-content; */
-    background-color: turquoise;
+    width: fit-content;
+    text-align: center;
+    /* background-color: turquoise; */
+
+    /* This might be a problem */
+    overflow: hidden;
 }
 
 .sdg-gif img {
-    height: 100%;
+    align-self: center;
 }
 
 @media screen and (min-width: 780px) {
     .sdg-container {
         max-height: 18rem;
+        /* padding: 3%; */
+    }
+    .sdg-gif img {
+        height: 100%;
     }
 }
 
 @media screen and (max-width: 780px) {
     .sdg-container {
         margin: 50px auto 20px auto;
+        flex-wrap: wrap;
+    }
+    .sdg-gif img {
+        width: 70%;
     }
 }
 
 @media screen and (max-width: 480px) {
     .sdg-gif img {
+        width: 100%;
     }
 }
 
 .sdg-content {
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: yellow; */
     /* min-height: 20vw; */
 }
 
@@ -117,16 +147,16 @@
     text-transform: uppercase;
     font-weight: bold;
     color: #333333;
-    padding: 8px;
-    background-color: silver;
+    padding: 1rem;
+    /* background-color: silver; */
 }
 
 .sdg-text {
-    padding: 8px;
+    padding: 1rem;
     text-align: justify;
     line-height: 1.8rem;
     font-size: 1.2rem;
-    background-color: royalblue;
+    /* background-color: royalblue; */
 }
 
 #footer {
