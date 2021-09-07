@@ -17,7 +17,7 @@
 }
 
 #sdg {
-    margin: 4rem 0;
+    margin: 6rem 0;
 }
 
 /* .sdg-container {
@@ -81,18 +81,16 @@
 }
 
 .sdg-container:hover {
-    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.4);
-    transform: scale(1.05);
+    box-shadow: 0px 0px 40px 6px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
 }
 
 .lc:hover {
-    margin: 50px auto 20px 50px;
-    flex-direction: row;
+    margin: 50px auto 20px 90px;
 }
 
 .rc:hover {
-    margin: 50px 50px 20px auto;
-    flex-direction: row-reverse;
+    margin: 50px 90px 20px auto;
 }
 
 .sdg-gif {
@@ -159,8 +157,28 @@
     /* background-color: royalblue; */
 }
 
+.border-hv {
+    border: none;
+    padding: 8px;
+    background:
+        linear-gradient(90deg, currentColor 50%, #0000 0) 100% 0,
+        linear-gradient(currentColor 0 0) 100% 0,
+        linear-gradient(-90deg, currentColor 50%, #0000 0) 0% 100%,
+        linear-gradient(currentColor 0 0) 0 100%;
+    background-size: 200% 3px, 3px 0%;
+    background-repeat: no-repeat;
+    transition: .3s, background-position .3s .3s;
+}
+
+.border-hv:hover {
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-size: 200% 3px, 3px 100%;
+    transition: .3s, background-size .3s .3s;
+}
+
 #footer {
     clear: both;
     height: 10rem;
     background-color: lightblue;
 }
+
