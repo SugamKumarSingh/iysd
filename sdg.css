@@ -17,29 +17,33 @@
 }
 
 #sdg {
-    /* margin: 4rem 0 4rem 0; */
-    margin-top: 3.6rem;
+    margin: 4rem 0;
 }
 
-.sdg-container {
+/* .sdg-container {
     min-height: 12rem;
+    padding: 3%;
     border-radius: 1rem;
-    box-shadow: 0px 00px 30px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.4);
     width: 70%;
+    display: flex;
+    flex-direction: row;
 }
 
 .cleft {
-    left: 0;
     margin-left: 3rem;
 }
 
 .cright {
-    float: right;
     margin-right: 3rem;
 }
 
 .gif img {
     height: 8rem;
+}
+
+@media screen and (min-width: 780) {
+    .sdg-container {}
 }
 
 @media screen and (max-width: 780) {
@@ -48,19 +52,19 @@
 
 @media screen and (max-width: 480) {
     .sdg-container {}
-}
+} */
 
-/* 
+
+
 .sdg-container {
     min-height: 8rem;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.4);
     width: 80vw;
     padding: 3%;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* text-align: center; */
     transition: all 0.6s ease;
     background-color: tomato;
 }
@@ -70,46 +74,42 @@
 }
 
 .rc {
-    float: right;
     margin: 50px 50px 20px auto;
 }
 
 .sdg-container:hover {
-    1 below
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.4);
 }
 
-@media screen and (max-width: 900px) {
+.sdg-gif {
+    /* width: fit-content; */
+    background-color: turquoise;
+}
+
+.sdg-gif img {
+    height: 100%;
+}
+
+@media screen and (min-width: 780px) {
+    .sdg-container {
+        max-height: 18rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
     .sdg-container {
         margin: 50px auto 20px auto;
     }
 }
 
-.sdg-gif {
-    width: fit-content;
-    background-color: turquoise;
-}
-
-.sdg-gif img {
-    width: 100%;
-}
-
-@media screen and (min-width: 840px) {
+@media screen and (max-width: 480px) {
     .sdg-gif img {
-        max-width: 20vw;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    .sdg-gif img {
-        width: 100%;
     }
 }
 
 .sdg-content {
     background-color: yellow;
-
-    min-height: 20vw;
+    /* min-height: 20vw; */
 }
 
 .sdg-heading {
@@ -127,8 +127,7 @@
     line-height: 1.8rem;
     font-size: 1.2rem;
     background-color: royalblue;
-} */
-
+}
 
 #footer {
     clear: both;
