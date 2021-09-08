@@ -85,10 +85,15 @@
     transition: .5s, background-position 0s .5s;
 }
 
-.two-way-underline:hover {
+#mission-text-box:hover .two-way-underline {
     background-size: 100% 4px;
     background-position: 100% 100%, 0 100%;
 }
+
+/* .two-way-underline:hover {
+    background-size: 100% 4px;
+    background-position: 100% 100%, 0 100%;
+} */
 
 .color-splash {
     padding: 8px;
