@@ -10,6 +10,7 @@
 
 .footer-container {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -18,10 +19,6 @@
     font-weight: bold;
     text-decoration: underline;
     line-height: 2.4rem;
-}
-
-.footer-col {
-    flex: 1 1 250px;
 }
 
 .footer-col ul {
@@ -36,14 +33,12 @@
 
 @media screen and (min-width: 780) {
     .footer-container {
-        justify-content: space-around;
     }
 }
 
 @media screen and (max-width: 780) {
-    .footer-container {
-        align-items: center;
-        flex-direction: column;
+    .footer-col {
+        flex: 1 1 350px;
     }
 }
 
