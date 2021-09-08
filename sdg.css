@@ -85,6 +85,24 @@
     transform: scale(1.1);
 }
 
+.two-way-underline {
+    /* Remove this comment if you want to display line only under the text */
+    /* width: fit-content; */
+    padding-bottom: 8px;
+    background:
+        linear-gradient(#ff0000 0 0) 0 100%,
+        linear-gradient(#0000ff 0 0) 100% 100%;
+    background-size: 0% 4px;
+    background-repeat: no-repeat;
+    background-blend-mode: difference;
+    transition: .5s, background-position 0s .5s;
+}
+
+.sdg-container:hover .two-way-underline {
+    background-size: 100% 4px;
+    background-position: 100% 100%, 0 100%;
+}
+
 .lc:hover {
     margin: 50px auto 20px 90px;
 }
@@ -157,7 +175,8 @@
     /* background-color: royalblue; */
 }
 
-.border-hv {
+.border-animation {
+    align-self: flex-end;
     border: none;
     padding: 8px;
     background:
@@ -168,17 +187,21 @@
     background-size: 200% 3px, 3px 0%;
     background-repeat: no-repeat;
     transition: .3s, background-position .3s .3s;
+    font-weight: bold;
+    color: #4D4D4D;
 }
 
-.border-hv:hover {
+.border-animation:hover {
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
     background-size: 200% 3px, 3px 100%;
     transition: .3s, background-size .3s .3s;
+    background-color: #F2F2F2;
+    color: black;
 }
 
 #footer {
     clear: both;
     height: 10rem;
-    background-color: lightblue;
+    background-color: #333333;
 }
 
