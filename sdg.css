@@ -175,6 +175,16 @@
     /* background-color: royalblue; */
 }
 
+button a {
+    text-decoration: none;
+    color: #4D4D4D;
+    transition: all 0.6s ease;
+}
+
+button a:hover {
+    color: black;
+}
+
 .border-animation {
     align-self: flex-end;
     border: none;
@@ -188,7 +198,6 @@
     background-repeat: no-repeat;
     transition: .3s, background-position .3s .3s;
     font-weight: bold;
-    color: #4D4D4D;
 }
 
 .border-animation:hover {
@@ -196,6 +205,5 @@
     background-size: 200% 3px, 3px 100%;
     transition: .3s, background-size .3s .3s;
     background-color: #F2F2F2;
-    color: black;
 }
 
