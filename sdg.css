@@ -20,42 +20,6 @@
     margin: 6rem 0;
 }
 
-/* .sdg-container {
-    min-height: 12rem;
-    padding: 3%;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.4);
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-}
-
-.cleft {
-    margin-left: 3rem;
-}
-
-.cright {
-    margin-right: 3rem;
-}
-
-.gif img {
-    height: 8rem;
-}
-
-@media screen and (min-width: 780) {
-    .sdg-container {}
-}
-
-@media screen and (max-width: 780) {
-    .sdg-container {}
-}
-
-@media screen and (max-width: 480) {
-    .sdg-container {}
-} */
-
-
-
 .sdg-container {
     min-height: 8rem;
     border-radius: 20px;
@@ -80,11 +44,6 @@
     flex-direction: row-reverse;
 }
 
-.sdg-container:hover {
-    box-shadow: 0px 0px 40px 6px rgba(0, 0, 0, 0.4);
-    transform: scale(1.1);
-}
-
 .two-way-underline {
     /* Remove this comment if you want to display line only under the text */
     /* width: fit-content; */
@@ -103,13 +62,20 @@
     background-position: 100% 100%, 0 100%;
 }
 
-.lc:hover {
+/* added in media query */
+
+/* .sdg-container:hover {
+    box-shadow: 0px 0px 40px 6px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+} */
+
+/* .lc:hover {
     margin: 50px auto 20px 90px;
 }
 
 .rc:hover {
     margin: 50px 90px 20px auto;
-}
+} */
 
 .sdg-gif {
     width: fit-content;
@@ -122,32 +88,6 @@
 
 .sdg-gif img {
     align-self: center;
-}
-
-@media screen and (min-width: 780px) {
-    .sdg-container {
-        max-height: 18rem;
-        /* padding: 3%; */
-    }
-    .sdg-gif img {
-        height: 100%;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .sdg-container {
-        margin: 50px auto 20px auto;
-        flex-wrap: wrap;
-    }
-    .sdg-gif img {
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .sdg-gif img {
-        width: 100%;
-    }
 }
 
 .sdg-content {
@@ -207,3 +147,39 @@ button a:hover {
     background-color: #F2F2F2;
 }
 
+@media screen and (min-width: 780px) {
+    .sdg-container {
+        max-height: 18rem;
+        /* padding: 3%; */
+    }
+    .sdg-gif img {
+        height: 100%;
+    }
+    .sdg-container:hover {
+        box-shadow: 0px 0px 40px 6px rgba(0, 0, 0, 0.4);
+        transform: scale(1.1);
+    }
+    .lc:hover {
+        margin: 50px auto 20px 90px;
+    }
+    
+    .rc:hover {
+        margin: 50px 90px 20px auto;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .sdg-container {
+        margin: 50px auto 20px auto;
+        flex-wrap: wrap;
+    }
+    .sdg-gif img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sdg-gif img {
+        width: 100%;
+    }
+}
