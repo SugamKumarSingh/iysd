@@ -1,7 +1,7 @@
 .navbar {
     position: sticky;
     top: 0px;
-    z-index: 50;
+    z-index: 5;
     background-color: #333333;
     color: white;
     font-weight: bold;
@@ -93,8 +93,6 @@
     .nav-list {
         display: inline-flex;
     }
-    .footer-container {
-    }
 }
 
 @media screen and (max-width: 780) {
@@ -104,7 +102,6 @@
     .nav-list {
         display: none;
     }
-    .footer-container {}
     .footer-col {
         flex: 1 1 350px;
     }
