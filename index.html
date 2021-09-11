@@ -8,30 +8,34 @@
     <title>IYSD | Home</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="standard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone">
 </head>
 
 <body>
-    <!-- <header>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>17 SDGs</li>
-                    <li>About Us</li>
-                    <li>Structure</li>
-                    <li>Partners</li>
-                </ul>
-            </nav>
-        </div>
-    </header> -->
-
     <div class="main-body">
+
+        <div id="navbar" class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/home/sdg-square.gif" alt="Sustainable Development Goals">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sdg.html">SDGs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="partners.html">Partners</a></li>
+            </ul>
+            <img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" alt="">
+        </div>
+
         <div class="section" id="home">
             <div class="main-box">
-                <div class="home-heading un-font theme-color">
+                <div class="home-heading theme-color">
                     Indian<br> Youth<br> for<br> Sustainable<br> Development
                 </div>
-                <div class="home-motto un-font">
+                <div class="home-motto">
                     <h3>Leave no one behind</h3>
                 </div>
             </div>
@@ -51,7 +55,7 @@
                 </div>
             </div>
             <div id="mission-text-box" class="main-box">
-                <div class="home-motto un-font two-way-underline">
+                <div class="home-motto two-way-underline">
                     <h3>Our Mission</h3>
                 </div>
                 <div class="mission-content">
@@ -63,6 +67,53 @@
             </div>
         </div>
 
+        <div class="section" id="stats">
+            <div class="main-box stat-box">
+                <span class="material-icons-two-tone stat-icon">people</span>
+                <div class="counting" data-count="48">0</div>
+                <h5>Members</h5>
+            </div>
+
+            <!-- <div class="vline"></div> -->
+            
+            <div class="main-box stat-box">
+                <span class="material-icons-two-tone stat-icon">flag</span>
+                <div class="counting" data-count="17">0</div>
+                <h5>Goals</h5>
+            </div>
+            
+            <!-- <div class="vline"></div> -->
+            
+            <div class="main-box stat-box">
+                <span class="material-icons-two-tone stat-icon">track_changes</span>
+                <div class="counting" data-count="169">0</div>
+                <h5>Targets</h5>
+            </div>
+            
+            <!-- <div class="vline"></div> -->
+
+            <div class="main-box stat-box">
+                <span class="material-icons-two-tone stat-icon">event</span>
+                <div class="counting" data-count="3084">0</div>
+                <h5>Events</h5>
+            </div>
+        </div>
+
+        <div class="section" id="events">
+            <div class="main-box event-box">
+                <div class="event-heading"></div>
+                <div class="event-description"></div>
+            </div>
+            <div class="main-box event-box">
+                <div class="event-heading"></div>
+                <div class="event-description"></div>
+            </div>
+            <div class="main-box event-box">
+                <div class="event-heading"></div>
+                <div class="event-description"></div>
+            </div>
+        </div>
+
         <div class="section" id="footer">
             <footer>
                 <div class="footer-container">
@@ -70,7 +121,7 @@
                         <label for="explore">Explore</label>
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="sdg.html">17 SDGs</a></li>
+                            <li><a href="sdg.html">SDGs</a></li>
                             <li><a href="events.html">Events</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="partners.html">Partners</a></li>
@@ -97,6 +148,10 @@
             </footer>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 
 </body>
 
