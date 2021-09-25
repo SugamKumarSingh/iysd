@@ -33,7 +33,7 @@
 
 .main-box {
     margin: auto;
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
 }
 
 .home-heading {
@@ -52,8 +52,7 @@
 }
 
 /* Mission Section */
-#mission {
-}
+#mission {}
 
 .mission-img img {
     width: 500px;
@@ -71,9 +70,9 @@
 /* Stats Counter Begins */
 #stats {
     min-height: 50vh;
-    background-color: blanchedalmond;
-	display: flex;
-	justify-content: center;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
     padding: 4rem 0 0 0;
 }
 
@@ -103,14 +102,31 @@ span.stat-icon {
 
 
 /* Event Section */
-.event-box {
+#events {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: clamp(23ch, 50%, 46ch);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.visual {
+    height: 125px;
+    width: 100%;
+}
+
+/* .event-box {
     padding: 0.75rem;
     border-radius: 0.75rem;
 }
 
 .event-img img {
     border-radius: 0.75rem;
-}
+} */
 
 
 
