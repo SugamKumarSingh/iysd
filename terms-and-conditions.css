@@ -1,0 +1,32 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+.main {
+    border: 5px solid rgb(43, 175, 228);
+    border-radius: 2rem;
+    margin: 25px;
+    padding: 25px;
+}
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+h2 {
+width: fit-content;
+padding-bottom: 8px;
+background:
+    linear-gradient(#ff0000 0 0) 0 100%,
+    linear-gradient(#0000ff 0 0) 100% 100%;
+background-size: 0% 4px;
+background-repeat: no-repeat;
+background-blend-mode: difference;
+transition: .5s, background-position 0s .5s;
+}
+h2:hover {
+    background-size: 100% 4px;
+    background-position: 100% 100%, 0 100%;
+}
