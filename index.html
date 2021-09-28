@@ -28,9 +28,29 @@
 </head>
 
 <body>
+    <div class="registration-form-overlay">
+        <div id="progress"></div>
+
+        <div class="center">
+            <div id="register">
+
+                <i id="progressButton" class="ion-android-arrow-forward next"></i>
+
+                <div id="inputContainer">
+                    <input id="inputField" required autofocus />
+                    <label id="inputLabel"></label>
+                    <div id="inputProgress"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <div id="navbar-spacer" style="height: 56px;"></div>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="opacity: 1;background: rgba(255,255,255,0.6);border-bottom-right-radius: 1rem;border-bottom-left-radius: 1rem;border-bottom-style: solid;border-bottom-color: var(--bs-blue);">
-        <div class="container"><a class="navbar-brand" href="index.html"><strong>IYSD</strong></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top"
+        style="opacity: 1;background: rgba(255,255,255,0.6);border-bottom-right-radius: 1rem;border-bottom-left-radius: 1rem;border-bottom-style: solid;border-bottom-color: var(--bs-blue);">
+        <div class="container"><a class="navbar-brand" href="index.html"><strong>IYSD</strong></a><button
+                data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
+                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1" style="font-weight: bold;">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
@@ -47,7 +67,8 @@
             <div class="row" style="padding: 16px;">
                 <div class="col-md-6 home-left">
                     <div>
-                        <h1 class="home-text" style="padding: 0;">Indian<br>Youth<br>for<br>Sustainable<br>Development</h1>
+                        <h1 class="home-text" style="padding: 0;">Indian<br>Youth<br>for<br>Sustainable<br>Development
+                        </h1>
                     </div>
                 </div>
                 <div class="col-md-6 home-right">
@@ -60,12 +81,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mission-left">
-                    <div><img class="img-fluid" src="assets/img/sdg-square.gif" style="padding: 20px;max-width: 80%;"></div>
+                    <div><img class="img-fluid" src="assets/img/sdg-square.gif" style="padding: 20px;max-width: 80%;">
+                    </div>
                 </div>
                 <div class="col-md-6 mission-right">
                     <div style="padding: 1rem;">
                         <h1>OUR MISSION</h1>
-                        <p>The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity. Indian Youth for Sustainable Development is a NGO who spread awareness about Sustainable Development Goals of United Nations among youth in India.</p>
+                        <p>The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the
+                            United Nations in 2015 as a universal call to action to end poverty, protect the planet, and
+                            ensure that by 2030 all people enjoy peace and prosperity. Indian Youth for Sustainable
+                            Development is a NGO who spread awareness about Sustainable Development Goals of United
+                            Nations among youth in India.</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +136,8 @@
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Subscribe for our Newsletter</h2>
-                <p class="text-center">You need to be a member to receive our newsletter. Don't worry we neither spam your inbox nor sell your data.</p>
+                <p class="text-center">You need to be a member to receive our newsletter. Don't worry we neither spam
+                    your inbox nor sell your data.</p>
             </div>
             <form class="d-flex justify-content-center flex-wrap" method="post">
                 <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
@@ -130,8 +157,13 @@
                     <div class="card">
                         <div class="card-body" style="padding: 16px;">
                             <h4 class="card-title">Launch Event</h4>
-                            <h6 class="text-muted card-subtitle mb-2">2nd Oct 2021, 1100 IST</h6><img class="img-fluid" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202109/apple_ar.jpg?oitBQa15Iif4LHV.bE4K_wDyINcbRBso&amp;size=770:433" style="margin: 8px 0 16px 0;">
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">RSVP</button>
+                            <h6 class="text-muted card-subtitle mb-2">2nd Oct 2021, 1100 IST</h6><img class="img-fluid"
+                                src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202109/apple_ar.jpg?oitBQa15Iif4LHV.bE4K_wDyINcbRBso&amp;size=770:433"
+                                style="margin: 8px 0 16px 0;">
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p><button class="btn btn-primary" type="button"
+                                onclick="eventRegistration()">RSVP</button>
                         </div>
                     </div>
                 </div>
@@ -139,8 +171,11 @@
                     <div class="card">
                         <div class="card-body" style="padding: 16px;">
                             <h4 class="card-title">Introductory Event</h4>
-                            <h6 class="text-muted card-subtitle mb-2">2nd Oct 2021, 1130 IST</h6><img class="img-fluid" src="https://t2.tudocdn.net/50170?w=1200&amp;h=675" style="margin: 8px 0 16px 0;">
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">RSVP</button>
+                            <h6 class="text-muted card-subtitle mb-2">2nd Oct 2021, 1130 IST</h6><img class="img-fluid"
+                                src="https://t2.tudocdn.net/50170?w=1200&amp;h=675" style="margin: 8px 0 16px 0;">
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p><button class="btn btn-primary" type="button">RSVP</button>
                         </div>
                     </div>
                 </div>
@@ -148,8 +183,12 @@
                     <div class="card">
                         <div class="card-body" style="padding: 16px;">
                             <h4 class="card-title">Discussion</h4>
-                            <h6 class="text-muted card-subtitle mb-2">2nd Oct 2021, 1200 IST</h6><img class="img-fluid" src="http://editorial.designtaxi.com/editorial-images/news-apple19102018/1.jpg" style="margin: 8px 0 16px 0;">
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">RSVP</button>
+                            <h6 class="text-muted card-subtitle mb-2">2nd Oct 2021, 1200 IST</h6><img class="img-fluid"
+                                src="http://editorial.designtaxi.com/editorial-images/news-apple19102018/1.jpg"
+                                style="margin: 8px 0 16px 0;">
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p><button class="btn btn-primary" type="button">RSVP</button>
                         </div>
                     </div>
                 </div>
@@ -186,12 +225,16 @@
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="https://github.com/SugamKumarSingh/iysd"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="https://github.com/SugamKumarSingh/iysd"><i
+                            class="icon ion-social-github"></i></a><a href="#"><i
+                            class="icon ion-social-instagram"></i></a>
                     <p class="copyright">Indian Youth for Sustainable Development © 2021</p>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="assets/js/index.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>

@@ -52,7 +52,7 @@
 }
 
 #events {
-  background-color: rgb(214,247,254);
+  background-color: rgb(214, 247, 254);
   min-height: 85vh;
   display: flex;
   align-items: center;
@@ -82,6 +82,9 @@
   align-self: center;
 }
 
-.event-page-row-card {
+.registration-form-overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
-
